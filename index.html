@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>St. Thomas' College, Matale</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-blue-800 text-white shadow-lg">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <img src="1541391_orig.jpg" alt="School Logo" class="h-12 w-12 rounded-full">
+                <h1 class="text-2xl font-bold">St. Thomas' College</h1>
+            </div>
+            <ul class="flex space-x-6">
+                <li><a href="#home" class="hover:text-blue-200 transition">Home</a></li>
+                <li><a href="#about" class="hover:text-blue-200 transition">About</a></li>
+                <li><a href="#academics" class="hover:text-blue-200 transition">Academics</a></li>
+                <li><a href="#sports" class="hover:text-blue-200 transition">Sports</a></li>
+                <li><a href="#contact" class="hover:text-blue-200 transition">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="relative h-screen flex items-center justify-center text-center bg-cover bg-center" style="background-image: url('/api/placeholder/1920/1080');">
+        <div class="absolute inset-0 bg-blue-900 opacity-60"></div>
+        <div class="relative z-10 text-white px-4">
+            <h1 class="text-5xl font-bold mb-4 animate-fade-in">St. Thomas' College, Matale</h1>
+            <p class="text-2xl mb-8">Courage & Faith Since 1873</p>
+            <a href="#about" class="bg-blue-600 hover:bg-blue-700 px-8 py-3 rounded-full transition transform hover:scale-105">Learn More</a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="container mx-auto py-16 px-4 grid md:grid-cols-2 gap-8 items-center">
+        <div>
+            <h2 class="text-3xl font-bold mb-6 text-blue-800">Our Legacy</h2>
+            <p class="text-gray-700 mb-4">Founded in 1873, St. Thomas' College has been a beacon of educational excellence for over 150 years. Our commitment to fostering courage and faith drives our mission to develop well-rounded individuals.</p>
+            <ul class="space-y-3 text-gray-600">
+                <li class="flex items-center">
+                    <svg class="w-6 h-6 mr-3 text-blue-500" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                    </svg>
+                    Over 2,000 Students
+                </li>
+                <li class="flex items-center">
+                    <svg class="w-6 h-6 mr-3 text-blue-500" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                    </svg>
+                    140+ Dedicated Staff
+                </li>
+                <li class="flex items-center">
+                    <svg class="w-6 h-6 mr-3 text-blue-500" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                    </svg>
+                    Classes 6-13
+                </li>
+            </ul>
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+            <img src="St.-Thomas-College-Matale.jpg" alt="School Building" class="rounded-lg shadow-lg transform hover:scale-105 transition">
+            <img src="992064.jpg" alt="Students" class="rounded-lg shadow-lg transform hover:scale-105 transition">
+        </div>
+    </section>
+
+    <!-- Sports Section -->
+    <section id="sports" class="bg-blue-50 py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-blue-800">Our Sporting Excellence</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <img src="istockphoto-177427917-612x612.jpg" alt="Cricket" class="mx-auto mb-4 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-2">Cricket</h3>
+                    <p>Renowned for our legendary "Battle of the Golds" annual match</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <img src="istockphoto-1440967752-612x612.jpg" alt="Hockey" class="mx-auto mb-4 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-2">Hockey</h3>
+                    <p>Consistently top performers in regional hockey competitions</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                    <img src="istockphoto-1475268036-612x612.jpg" alt="Other Sports" class="mx-auto mb-4 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-2">Multi-Sport Campus</h3>
+                    <p>Encouraging physical fitness and team spirit across various disciplines</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white py-12">
+        <div class="container mx-auto px-4 grid md:grid-cols-3 gap-8">
+            <div>
+                <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+                <p>St. Thomas' College</p>
+                <p>Matale, Sri Lanka</p>
+                <p>Email: admin@stthomascollege.lk</p>
+                <p>Phone: 0662 222 523</p>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                <ul class="space-y-2">
+                    <li><a href="#" class="hover:text-blue-300">Admissions</a></li>
+                    <li><a href="#" class="hover:text-blue-300">Academic Calendar</a></li>
+                    <li><a href="#" class="hover:text-blue-300">Alumni Network</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold mb-4">Follow Us</h3>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-white hover:text-blue-300">Facebook</a>
+                    <a href="#" class="text-white hover:text-blue-300">Instagram</a>
+                    <a href="#" class="text-white hover:text-blue-300">Twitter</a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-8 border-t border-blue-700 pt-4">
+            <p>&copy; Developed by Sudil Sandamina Nedagamuwage.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // GSAP animations
+        gsap.from(".animate-fade-in", {
+            opacity: 0,
+            y: 50,
+            duration: 1,
+            ease: "power3.out"
+        });
+    </script>
+</body>
+</html>
